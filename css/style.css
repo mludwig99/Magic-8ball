@@ -1,93 +1,112 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);;
+    background-image: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+    ;
 }
 
-.wrapper{
+.wrapper {
     display: flex;
     flex-direction: column;
     width: 40%;
     height: 50%;
-    
+
 }
 
-.info{
+.info {
     text-align: center;
 }
-.info h1{
-    margin-bottom:12px ;
-}
-.ball-img{
-    position: relative;
-    height: 250px;
-}
-img{
-  position: absolute;
-  top: 30px;
-  left: 40%;
-  width: 30%;
-  cursor: pointer;
- 
+
+.info h1 {
+    margin-bottom: 12px;
 }
 
-.qestion-area{
+.ball-img {
+    position: relative;
+    min-height: 150px;
+}
+
+img {
+    position: absolute;
+    top: 30px;
+    left: 40%;
+    width: 40%;
+    cursor: pointer;
+
+}
+
+.qestion-area {
     display: flex;
     flex-direction: column;
     text-align: center;
-  }
-  input{
-    font-size: 22px;
-    padding: 5PX;
-  }
-  .qestion-area h2{
-    margin-bottom: 10px;
-  }
+}
 
-  .answer{
+input {
+    font-size: 22px;
+    padding: 5px;
+}
+
+.qestion-area h2 {
+    margin-bottom: 10px;
+}
+
+.answer {
     font-size: 22px;
     margin-top: 16px;
     color: blue;
     text-transform: uppercase;
 
-  }
-  .error{
+}
+
+.qestion-area .answer span {
+    font-weight: bold;
+    color: blue;
+}
+
+.error {
     font-size: 22px;
     color: red;
     text-transform: uppercase;
 
-  }
+}
 
-  .shake-animation{
-    animation: shake 1.5s 1;
-  }
+.shake-animation {
+    animation: shake 1s 1 linear;
+}
 
-  @keyframes shake {
-    0%{
-        left: 36%;
+@keyframes shake {
+    0% {
+        left: 40%;
     }
-    20%{
+
+    20% {
         left: 44%;
     }
-    40%{left: 36%;
-    }
-    60%{
-        left:44% ;
-    }
-    80%{
-        left: 36%;
-    }
-    100%{
-       left: 40%; 
+
+    40% {
+        left: 38%;
     }
 
-    
-  }
+    60% {
+        left: 44%;
+    }
+
+    80% {
+        left: 38%;
+    }
+
+    100% {
+        left: 40%;
+    }
+
+
+}
